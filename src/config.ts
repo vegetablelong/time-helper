@@ -60,16 +60,16 @@ interface Config{
     TEXT_OK:string
 }
 export const config:Config= {
-    USER_AGENT: 'Dalvik/2.1.0 (Linux; U; Android 9; INE-AL00 Build/HUAWEIINE-AL00)',
-    USER_AGENT2:'Mozilla/5.0 (Linux; Android 9; INE-AL00) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.127 Mobile Safari/537.36 Wanxiao/5.2.5',
+    USER_AGENT: 'Dalvik/2.1.0 (Linux; U; Android 10; ALP-AL00 Build/HUAWEIALP-AL00)',
+    USER_AGENT2:'Mozilla/5.0 (Linux; Android 10; ALP-AL00) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.127 Mobile Safari/537.36 Wanxiao/5.2.5',
     TYPE:null,
     TOKEN:null,
     APP_ID:null,
     USERNAME:null,
     PASSWORD:null,
-    MODEL:'HUAWEI INE-AL00',
-    MODEL_CODE:'INE-AL00',
-    SYSTEM_VERSION:'9',
+    MODEL:'HUAWEI ALP-AL00',
+    MODEL_CODE:'ALP-AL00',
+    SYSTEM_VERSION:'10',
     SYSTEM_TYPE:'android',
     SCKEY:null,
     DEVICE_ID:null,
@@ -77,8 +77,8 @@ export const config:Config= {
     PROXY_HOST:null,
     PROXY_PORT:null,
     APP_VERSION:10525101,
-    TEXT_OK:'芜湖~打卡完成！',
-    TEMP_RANGE:"35.4-36.9"
+    TEXT_OK:'Re~打卡完成！',
+    TEMP_RANGE:"36.2-36.6"
 }
 export function setupConfig(data:{[key in keyof typeof config]?:string}){
     return Object.assign(config,data);
