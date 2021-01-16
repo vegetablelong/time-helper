@@ -15,6 +15,6 @@ jobs:
     - name: Send Message
       run: |
           npm install
-          npm run send 测试标题 测试内容
+          npm run send test-titile-RE Re-测试内容
       env:
         SCKEY: ${{ secrets.SCKEY }}
